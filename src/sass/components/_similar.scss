@@ -1,0 +1,15 @@
+.join-similar {
+
+	&__title {
+		margin: 30px auto 10px 20px;
+		font-weight: 700;
+		font-size: 18px;
+		color: $text-gold;
+	}
+
+	&__container {
+		width: 100%;
+		height: 100px;
+		background-color: $background-grey;
+	}
+}
