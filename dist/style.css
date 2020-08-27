@@ -382,6 +382,10 @@ template {
   display: none;
 }
 
+/***************
+COLOR VARIABLES
+***************/
+
 *,
 *::before,
 *::after {
@@ -416,10 +420,10 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.22;
+  line-height: 1.3;
   font-style: normal;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #213632;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -468,7 +472,7 @@ input[type=number] {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-left: 112px;
+  margin: 35px auto 0 112px;
 }
 
 .join-content__aside {
@@ -479,6 +483,19 @@ input[type=number] {
 .join-content__main {
   width: 73%;
   max-width: 832px;
+}
+
+.join-similar__title {
+  margin: 30px auto 10px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #eca900;
+}
+
+.join-similar__container {
+  width: 100%;
+  height: 100px;
+  background-color: #fafafa;
 }
 
 .business-subscribe {
