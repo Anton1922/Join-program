@@ -1,15 +1,17 @@
 .join-content {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	max-width: 1140px;
 	margin: 35px auto 0 112px;
 
 	&__aside {
-		width: 25%;
-		max-width: 280px;
+		margin-right: 2.5%;
+		width: 24.5%;
+		//max-width: 280px;
 	}
 
 	&__main {
 		width: 73%;
-		max-width: 832px;
+		//max-width: 832px;
 	}
 }
