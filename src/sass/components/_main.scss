@@ -1,0 +1,31 @@
+.join-main {
+
+	&__title {
+		position: relative;
+		display: inline-block;
+		margin: 0 auto 20px 5px;
+		max-width: 759px;
+		font-weight: 700;
+		font-size: 48px;
+		//font-stretch: ultra-expanded;
+		letter-spacing: 0;
+
+		&::after {
+			content: '';
+			z-index: -1;
+			position: absolute;
+			left: 0;
+			bottom: 10%;
+			width: 100%;
+			border-bottom: 0.35em solid $text-gold;
+		}
+	}
+
+	&__container-image {
+		margin-bottom: 54px;
+	}
+
+	&__text:not(:last-of-type) {
+		margin-bottom: 25px;
+	}
+}
