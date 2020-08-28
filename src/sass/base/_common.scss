@@ -35,7 +35,8 @@ body {
   font-style: normal;
   font-weight: 700;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #213632;
+  color: $text-common-black;
+  transition: all 0.3s linear;
   user-select: none;
 }
 
@@ -62,4 +63,124 @@ input::-webkit-inner-spin-button {
 /*** Firefox ***/
 input[type=number] {
   -moz-appearance:textfield;
+}
+
+.join-program {
+  margin-bottom: 110px;
+}
+
+.join-title-h2 {
+  font-weight: 700;
+  font-size: 36px;
+
+  & span {
+    position: relative;
+
+    &::after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      bottom: 10%;
+      width: 100%;
+      border-bottom: 0.35em solid $text-gold;
+      transition: all 0.3s linear;
+    }
+  }
+}
+
+.join-title-h3 {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.join-title-h4 {
+  margin: 26px 0 16px 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.join-text {
+  max-width: 515px;
+  font-weight: 400;
+  font-size: 16px
+}
+
+.join-text-second {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.join-link-program {
+  color: $text-common-black;
+
+  &:hover span::after {
+    left: 25%;
+    border-color: $text-gold-hover;
+  }
+}
+
+.join-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.join-link-contact {
+  font-weight: 700;
+  font-size: 18px;
+  color: $text-common-black;
+
+  & span {
+    font-weight: 400;
+  }
+
+  &:hover {
+    color: $text-gold-hover;
+  }
+}
+
+.join-image-caption {
+  margin-bottom: 55px;
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.join-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 26px;
+}
+
+.join-button {
+  padding: 25px 79px;
+  max-width: 420px;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: $text-white;
+  border: 3px solid $background-gold;
+  background-color: $background-gold;
+
+  &:hover {
+    color: $text-gold;
+    background-color: $background-white;
+  }
+
+  &--small {
+    padding-left: 34px;
+    padding-right: 34px;
+    max-width: 208px;
+    margin-left: 25px;
+    color: $text-gold;
+    background-color: $background-white;
+
+    &:hover {
+      color: $text-white;
+      background-color: $background-gold;
+    }
+  }
 }
