@@ -65,7 +65,7 @@ input[type=number] {
   -moz-appearance:textfield;
 }
 
-.join-program {
+.join-program:not(:last-of-type) {
   margin-bottom: 110px;
 }
 
@@ -102,9 +102,12 @@ input[type=number] {
 }
 
 .join-text {
-  max-width: 515px;
   font-weight: 400;
   font-size: 16px
+}
+
+.join-text:not(.join-main__text) {
+  max-width: 515px;
 }
 
 .join-text-second {
